@@ -1,29 +1,32 @@
-# 色卡制作 Color Palette Generator
+# Color Palette Generator
 
-色卡是一张照片总体颜色的体现。最近色卡风靡摄影圈，然而实现起来确是非常简单的。本程序用 Python 写成。主要用到 OpenCv。
+## Introduction
 
-举个例子。
+Color Palette is a way of showing the most prominent colors in a picture visually. This piece of code could automatically generate a color palette from given photography both in portrait and landscape mode. 
 
-![20210112 琶醍日落_product](product/20210112 琶醍日落_product.jpeg)
+Some examples of color palettes are below. 
 
-![DSC03297_product](product/DSC03297_product.jpeg)
+![Test 1_product](product/Test 1_product.jpeg)
 
-![DSC02583合成_product](product/DSC02583合成_product.jpeg)
+![Test2_product](product/Test2_product.jpeg)
 
-- Dependencies: 
-  - numpy
-  - cv2 
-  - matplotlib.pyplot
+The code is implemented in Python with the following packages installed. 
 
-都是非常常用的 packages。
+- Dependnecies 
+  - [NumPy](https://numpy.org/) 
+  - [cv2](https://opencv.org/) 
+  - [matplotlib](https://matplotlib.org/) 
 
 ## How to Use
 
-首先打开 `color palette `  jupyter notebook 并检查 dependencies。然后把想要生成色卡的图片丢进 `src`  文件夹，逐行运行。程序成功运行以后，你的色卡会放在 `product` 文件夹里面。非常方便啦。
-
-第二个 block 里面有一些可以调整的参数，可以按自己喜好调整。
+- Open `color palette.ipynb` Jupiter notebook and check if all the dependencies are installed by running the first block of code. 
+- Adjust the parameters in the second block 
+  - `size`: this parameter controls the size of the shortest edge in pixels 
+  - `bg`: this parameter controls the background color in RGB color code 
+- Put all the pictures for color palette generation into the `src` folder 
+- Run the rest of the program 
+- Your color palette will be in the `product` folder 
 
 ## Possible Improvement
 
-未来要优化的是 complexity， 这个程序现在非常慢。在顶配 mbp 上跑都只能勉强维持 短边 1000 px 左右的计算量。以后有时间可以看一下优化问题。
-
+Currently, the program is not very efficient, so the final image size is limited to about 1000 pixels on the shortest edge. 
