@@ -6,8 +6,6 @@ Color Palette is a way of showing the most prominent colors in a picture visuall
 
 Some examples of color palettes are below. 
 
-![Test 1_product](product/Test 1_product.jpeg)
-
 ![Test2_product](product/Test2_product.jpeg)
 
 The code is implemented in Python with the following packages installed. 
